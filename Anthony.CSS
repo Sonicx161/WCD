@@ -1,14 +1,11 @@
 h1 {
+    background-color:lightblue;
     color:navy;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size:300%;
-
 }
 p.z { color:black;
-    background-color:white;
-
-
-}
-#l1 {color:black;
-    
-}
+    background-color:white;}
+header { color:black;
+    background-color:lightblue;}
+p1 {color:red;}
