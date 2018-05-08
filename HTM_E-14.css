@@ -6,6 +6,7 @@
    Date:     
    HTML5 and CSS3 Illustrated Unit E, Visual Workshop
  */
+body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
 /* reset styles */
 article, body, div, footer, header, h1, h2, p {
@@ -19,12 +20,23 @@ body div.container {
    max-width: 640px;
    margin: 0 auto;
    background-color: white;
+   box-shadow: 0px 1px 2px 2px lightslategrey;
+   
 }
-
+h1 {font-size: 2.5em} 
+h1::first-letter { text-shadow: 2px 2px rgb(198,156,109) 
+}
+h2::first-letter { text-shadow: 2px 2px rgb(198,156,109)
+}
 /* headings */
 header {
    padding: 0.5em;
    text-align: center;
+   background-color: rgb(189,204,212);
+   font-family: 'Playfair Display', serif;
+   
+   
+   
 }
 
 /* main content */
@@ -32,19 +44,24 @@ article {
    width: 62%;
    padding: 3%;
    float: left;
+   background-color: rgb(198,156,109);
 }
 article div.container {
    padding: 2%;
    background-color: white;
+   
 }
 article h2 {
    margin-bottom: 0.4em;
+   
 }
 article p {
    margin: 0 0 0.8em 1em;
+  
 }
 
 /* sidebar */
+
 aside {
    width: 28%;
    padding: 2%;
@@ -60,4 +77,5 @@ footer {
    padding: 0.5em;
    clear: both;
    text-align: right;
+   background-color: rgb(189,204,212);
 }
