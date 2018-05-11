@@ -2,7 +2,7 @@
    Revisions Bookstore and Cafe style sheet 
    Filename: styles.css
 
-   Author:   
+   Author:   Anthony
    Date:     
    HTML5 and CSS3 Illustrated Unit D, Visual Workshop
  */
@@ -20,11 +20,6 @@ body {
  margin:0 auto;
  border:1.75px solid blue;
  padding:0;
- 
-
-
-
-  
 }
 
 /* headings */
