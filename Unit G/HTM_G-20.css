@@ -21,6 +21,7 @@ article, body, div, footer, header, h1, h2, img, nav, p {
 body {
    font-family: Verdana, Geneva, sans-serif;
    background-color: rgb(253,245,230);
+   background: url("images/books.png");
 }
 .container {
    max-width: 800px;
@@ -58,6 +59,11 @@ header h1 {
    margin-top: 5%;
    font-size: 3.2em;
    float: right;
+  
+}
+#logo { 
+  float:left;
+  text-align: left;
 }
 
 /* site navigation */
@@ -92,6 +98,10 @@ article {
    padding: 3%;
    float: left;
    background: #c69c6d;
+  
+}
+#browsing {
+  float: right;
 }
 article div.container {
    padding: 2%;
