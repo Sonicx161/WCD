@@ -1,8 +1,28 @@
 /* 
 My websiite
-Filename:Style.css
+Filename:Styles.css
 
 Author:Anthony
 Date:
 CA1 
 */ 
+html { 
+    
+}
+body {
+    
+}
+nav.sitenavigation {
+    text-align: center;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 25px;
+}
+nav.sitenavigation p {
+    display: inline-block;
+    margin: 1em;
+
+}
+
+
+
