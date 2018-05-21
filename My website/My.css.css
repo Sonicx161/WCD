@@ -29,6 +29,9 @@ nav.sitenavigation p {
 article  { 
     font-size: 30px;
 }
+footer {
+    display: inline-block;
+}
 
 
 
