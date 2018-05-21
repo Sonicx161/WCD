@@ -112,6 +112,9 @@ article h2 {
    font-weight: 900;
    font-size: 2em;
 }
+#browsing {
+  float: right;
+}
 article p {
    margin: 0 0 0.8em 1em;
 }
