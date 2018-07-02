@@ -147,11 +147,11 @@ footer {
 /* small screen/iphone style */
 @media screen and (min-width:375px),print {
   article {
-    padding:25;
-    
-  }
+    padding:3%;
+  } 
+ 
 
-}
+} 
 @media print {
    body, h1, article, footer {
       background-color: rgb(255,255,255);
