@@ -137,6 +137,26 @@ aside p {
    font-size: 1.1em;
 }
 
+/* main content tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 0.5em;
+}
+table thead {
+  background: #FFF4E0;
+}
+td {
+  border: 2px solid black;
+  font-size: 1.3em;
+
+}
+th {
+  border: 2px solid black;
+  font-size: 1.3em;
+}
+
+
 /* footer section */
 footer {
    padding: 0.5em;
