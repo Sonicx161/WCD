@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Eating Well in Season - Signup</title>
+      <!-- 
+         Eating Well in Season Signup page
+         Filename: order.html
+
+         Author:   
+         Date:     
+         HTML5 and CSS3 Illustrated Unit M, Independent Challenge 4
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="modernizr.custom.40753.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="icon" sizes="192x192" href="images/android.png">
+   </head>
+   <body>
+      <div class="header-nav-container">
+         <p class="skipnavigation"><a href="contentstart">Skip navigation</a></p>
+         <header>
+            <h1>Eating Well in Season</h1>
+            <div>
+               <img src="images/logo.png" width="216" height="146" alt="">               
+            </div>
+         </header>
+         <nav class="sitenavigation">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="sources.html">Sources</a></li>
+               <li><a href="menus.html">Sample Menus</a></li>
+               <li><a href="pricing.html">Pricing</a></li>
+               <li><a href="order.html">Order</a></li>
+            </ul>
+         </nav>
+      </div>
+      <div class="article-aside-outer-container">
+         <div class="article-aside-inner-container">
+            <article id="contentstart">
+               <h2>Order</h2>
+               <form action="results.html">
+                  <fieldset class="address-options">
+                     <legend>Choose an address</legend>
+                     <div class="two-column">
+                        <input type="radio" id="homeoption" name="shippingaddress">
+                        <label for="homeoption">Home</label>
+                        <p>1 Main St.</p>
+                        <p>Sicilia, ME 03900</p>
+                     </div>
+                     <div class="two-column">
+                        <input type="radio" id="workoption" name="shippingaddress">
+                        <label for="workoption">Work</label>
+                        <p>15 Columbine Ln.</p>
+                        <p>Crab City, ME 04993</p>
+                     </div>
+                  </fieldset>
+                  <fieldset class="contact-info">
+                     <label for="streetinput">
+                        Street Address
+                        <input type="text" id="streetinput" name="streetinput">
+                     </label>
+                     <label for="cityinput">
+                        City
+                        <input type="text" id="cityinput" name="cityinput">
+                     </label>
+                     <label for="stateinput">
+                        State
+                        <input type="text" id="stateinput" name="stateinput">
+                     </label>
+                     <label for="zipinput">
+                        Zip
+                        <input type="text" id="zipinput" name="zipinput">
+                     </label>
+                  </fieldset>
+                  <fieldset class="submitbutton">
+                     <input type="submit" id="submit" value="Submit">
+                  </fieldset>
+               </form>
+            </article>
+            <aside>
+               <h2>What&rsquo;s In Season</h2>
+               <p>Baby Carrots</p>
+               <p>Cardoons</p>
+               <p>Chard</p>
+               <p>Fiddleheads</p>
+               <p>Mint</p>
+               <p>Morels</p>
+               <p>New Potatoes</p>
+               <p>Ramps</p>
+            </aside>
+         </div>
+      </div>
+      <footer>
+         <p>Eating Well in Season &bull; Glover, VT &bull; (802) 555-3947</p>
+      </footer>
+   </body>
+</html>

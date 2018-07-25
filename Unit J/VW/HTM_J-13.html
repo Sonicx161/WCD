@@ -18,6 +18,7 @@
       <link rel="shortcut icon" href="images/favicon.ico">
       <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
       <link rel="icon" sizes="192x192" href="images/android.png">
+      <link rel="results" href="results.html">
    </head>
    <body>
       <div class="container">
@@ -40,6 +41,85 @@
             <div class="container">
                <h2>Book Groups</h2>
                <h3>Sign Up Form</h3>
+               <form action="results.html">
+                   <fieldset class = "contactinfo">
+                       <legend> Contact information </legend>
+                       <label for = "firstnameinput">
+                           First name
+                           <input type = "text" name="First name" id="firstnameinput" placeholder="First name">
+                       </label>
+                       <label for = "lastnameinput">
+                           Last name 
+                           <input type = "text" name"Last name" id= "lastnameinput" placeholder="Last name">
+                       </label>
+                       <label for = "emailinput">
+                           Email
+                           <input type = "email" name="email" id="emailinput" placeholder="address@example.com">
+                       </label>
+                       <label for = "numberinput">
+                           Phone
+                           <input type = "text" name="phone" id="numberinput">
+                       </label>
+                   </fieldset>
+
+                   <fieldset class = "contactmet">
+                       <legend> Preferred contact method </legend>
+                       <label for = "phone">
+                       <input type = "radio" name = "contactmethod" id="phone" value="Phone"checked>
+                       Phone
+                    </label>
+                    <label for = "email">
+                        <input type = "radio" name="contactmethod" id="email" value = "Email" >
+                        Email
+                    </label>
+                    <label for = "either">
+                        <input type = "radio" name="contactmethod" id="contactmethod" value="Either" >
+                        Either
+                    </label>
+                   </fieldset>
+
+                   <fieldset class = "interest">
+                       <legend> Topic(s) of interest </legend>
+                       <label for = "AAW">
+                           <input type = "checkbox" name="AAW" id="AAW" value="AAW">
+                           African American Writers
+                       </label>
+                       <label for ="mystery">
+                            <input type = "checkbox" name="msytery" id="mystery" value="mystery">
+                               Mystery
+                           </label>
+                        <label for ="SFF">
+                            <input type ="checkbox" name="SFF" id="SFF" value="SSW">
+                            Science Fiction/Fantasy
+                       </label>
+                       <label for ="SF">
+                           <input type = "checkbox" name="SF" id="SF" value="SF">
+                           Short fiction
+                       </label>
+                       <label for ="VH">
+                           <input type = "checkbox" name="VH" id="VH" value="VH">
+                           Virginia History
+                       </label>
+                       <label for = "Other">
+                           <input type = "checkbox" name="Other" id="Other" value="Other">
+                           Other (please specify below)
+                       </label>
+                   </fieldset>
+
+                   <fieldset class = "addinfo">
+                       <legend> Additional information </legend>
+                       <label for ="textbox"></label>
+                       <p> Questions or topic ideas for new writing group </p>
+                           <textarea name="feedback" id="feedback" rows="7" ></textarea>
+                          
+                       </label>
+                   </fieldset>
+                   
+                   <fieldset class = "submitbutton">
+                       <input type = "submit" id="submit" value="submit">
+                    
+                   </fieldset>                   
+               </form>
 
             </div>
          </article>

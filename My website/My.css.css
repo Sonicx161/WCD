@@ -45,7 +45,8 @@ a:link {
 h1 {
     text-align: center;
     font-size: 80px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Claiborne;
+    letter-spacing:0.1cm;
     padding-top: 0em;
 } 
 /* navigation bar */
@@ -53,9 +54,9 @@ nav.sitenavigation {
     text-align: center;
     background-color:#A8E0F4;
     color:#000000;
-    font-size: 25px;
+    font-size: 50px;
     border:Solid #000000 1px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Hickory Jack;
     border-bottom:none;
 }
 nav.sitenavigation p {
@@ -69,10 +70,11 @@ nav.sitenavigation a:hover, nav.sitenavigation a:focus {
  }
 /* article property for all HTML */
 article  { 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 30px;
+    font-family:Lovers Quarrel;
+    font-weight:bold;
+    font-size: 50px;
     border:Solid #000000 2px;
-    text-align:left;
+    text-align:center;
 }
 /* property for the classes in HTML */
 .home ,.Hobbies ,.DNA ,.SW ,.Eduback ,.Important {
@@ -84,6 +86,7 @@ figure {
     float:right;
     text-align:right;
     padding: 0em 1em 1em 0em;
+    
 }
 /* property for Aboutme.html */
 .Aboutme {
