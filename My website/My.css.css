@@ -6,8 +6,18 @@ Author:Anthony
 Date:27-5-2018
 CA1 
 */ 
+@font-face {
+    font-family: 'Hickory Jack';
+    src: url(http://www.fontspace.com/brittney-murphy-design/hickory-jack)
+}
+@font-face {
+    font-family:'Chopin Script';
+    src: url(https://www.1001fonts.com/chopin-script-font.html)
+}
+
+
 html { 
-    background-color:#FEFFF3  ;
+    background-color:#FEFFF3;
     text-align: center;
     margin:0 auto; 
     max-width: 1280px;
@@ -42,10 +52,21 @@ a:link {
  }
 
 /* h1 property for all HTML */
+.pointer {
+    font-family:Chopin Script;
+    font-weight:bold;
+}
 h1 {
+    text-align:center;
+    font-size:50px;
+    font-family:Hickory Jack;
+    letter-spacing:0.1cm;
+    
+}
+h2 {
     text-align: center;
     font-size: 80px;
-    font-family: Claiborne;
+    font-family: Chopin Script;
     letter-spacing:0.1cm;
     padding-top: 0em;
 } 
@@ -69,9 +90,10 @@ nav.sitenavigation a:hover, nav.sitenavigation a:focus {
     background-color: #000000;
  }
 /* article property for all HTML */
+
 article  { 
-    font-family:Lovers Quarrel;
-    font-weight:bold;
+    font-family:'Hickory Jack';
+    font-weight:2em;
     font-size: 50px;
     border:Solid #000000 2px;
     text-align:center;
