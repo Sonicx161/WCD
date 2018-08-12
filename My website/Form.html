@@ -37,24 +37,24 @@
     <article id="feedback">
       <div class="fbcontainer">
         <h2> Feedback for my website </h2>
-        <form method="GET" action="Results.html">
+        <form name="Response" method="GET" action="Results.html" onsubmit="return validateForm()">
             <fieldset class = "contactinfo">
                 <legend>Your contact information </legend>
                 <label for = "firstnameinput">
                     First name <br>
-                    <input type ="text" name="First name" id="firstnameinput" placeholder="First name" required>
+                    <input type ="text" name="Firstname" id="firstnameinput" placeholder="First name" >
                 </label>
                 <label for = "lastnameinput">
                     Last name <br>
-                    <input type= "text" name="Last name" id= "lastnameinput" placeholder="Last name" required>
+                    <input type= "text" name="Lastname" id= "lastnameinput" placeholder="Last name" >
                 </label>
                 <label for = "emailinput">
                     Email <br>
-                    <input type = "email" name="Email address" id="emailinput" placeholder="address@example.com" required>
+                    <input type = "email" name="Emailaddress" id="emailinput" placeholder="address@example.com">
                 </label>
                 <label for = "numberinput">
                     Phone <br>
-                    <input type = "text" name="Phone No" id="numberinput" placeholder="e.g 99999999" required>
+                    <input type = "text" name="Phoneno" id="numberinput" placeholder="e.g 99999999" >
                 </label>
             </fieldset>
 
@@ -83,8 +83,8 @@
                </label>
                <label for = "Hobbies">
                  What is/are your hobby (ies)? <br>
-                 <input type = "text" name="Hobbies" id="Hobbyinput" placeholder="Your hobby"><br>
-                 <input type = "text" name="Hobbies" id="Hobbyinput" placeholder="Your hobby">
+                 <input type = "text" name="Hobby1" id="Hobbyinput" placeholder="Your hobby"><br>
+                 <input type = "text" name="Hobby2" id="Hobbyinput" placeholder="Your hobby">
                </label>
                <label for = "TopicInterest">
                  What is/are some of your topic(s) of interest? <br>

@@ -37,4 +37,36 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
+/* form validation */
+function validateForm() {
+    var x = document.forms["Response"]["Firstname"].value;
+    if (x == "") {
+        alert("Please fill in your first name");
+        return false;
+    }
+}
+
+function validateForm() {
+    var x = document.forms["Response"]["Lastname"].value;
+    if (x == "") {
+        alert("Please fill in your last name");
+        return false;
+    }
+}
+
+function validateForm() {
+    var x = document.forms["Response"]["Emailaddress"].value;
+    if (x == "") {
+        alert("Please fill in your email address");
+        return false;
+    }
+}
+
+function validateForm() {
+    var x = document.forms["Response"]["Phoneno"].value;
+    if (x == "") {
+        alert("Please fill in your phone number");
+        return false;
+    }
+}
 
