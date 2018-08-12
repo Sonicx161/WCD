@@ -34,11 +34,8 @@ html {
 
 /* for screen of at most 480px */
 @media screen and (max-width:480px), print {
-/* nav bar menu property */
-    ul {
-        list-style-type:none;
-    }
-     
+
+/*body property */
 body {
     max-width: 420px;
     margin:auto;
@@ -46,24 +43,69 @@ body {
     color:#000000;
     padding-top:0.5em;
     padding-bottom:0.5em;
+}  
+/* h1 property for all HTML */
+h1 {
+    text-align:center;
+    font-family:'Playball','Roboto',Arial, Helvetica, sans-serif;
+    color:#000000;
+    font-size: 30px;
+    margin-top:70px;
+}
+/* all photo property */
+
+/* photo property for all horizontal images */
+.Photos1 {
+    width:35%;
 }
 
-/* property */
+/* photo property for all vertical images */
+.Photos {
+    width:70%;
+    height:5%;
+    margin-top:10px;
+}
+/* footer property for all HTML */
+
+figure {
+    font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
+    font-size:15px;
+    text-align:right;
+    font-weight:bold;
+    margin:15px;
+    margin-right:15px;
+    margin-top:25px;
+}
+
+/* icon property */
+span {
+    margin-left:8px;
+ }
+
+/* all header property */
+
+/* logo property */
 #logo {
     display:none;
 }
-nav.sitenavigation {
-    background-color:#000000;
-    top:0;
-    left:0;
-    position:relative;
-}
+
+/* nav bar menu */
 div.navmenu {
     position:absolute;
     left:0;
     top:0;
 }
 
+/* navigation property */
+nav.sitenavigation {
+    background-color:#000000;
+    top:0;
+    left:0;
+    position:relative;
+}
+ul {
+     list-style-type:none;
+}  
 nav.sitenavigation ul {
     border:3px solid transparent;;
     display:none;
@@ -71,17 +113,17 @@ nav.sitenavigation ul {
     z-index:2;
     background-color:#000000;
     margin-top:50px;
-  
 }
 nav.sitenavigation li{
     padding:5px;
     color:#FFFFFF;
 }
+
+/* navigation colour property */
 nav.sitenavigation a:link {
     text-decoration: none;
     color:#FFFFFF;
 }
-
 a:link {
     color:#FFFFFF;
   }
@@ -92,11 +134,12 @@ nav.sitenavigation a:hover, nav.sitenavigation a:focus {
     color: #EE592E;
     background-color: #000000;
  }
- .pointer {
+
+ /* article property for Index.html */
+.pointer {
     color:#000000;
 }
-
- div.home{
+div.home{
     max-width:400px;
     height:50%;
     border:5px solid #000000;
@@ -106,10 +149,8 @@ nav.sitenavigation a:hover, nav.sitenavigation a:focus {
     padding-top:10px;
     padding-bottom:10px;
     padding-left:5px;
-   
 }
-
- indexarticle {
+indexarticle {
     font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-align:center;
@@ -118,7 +159,6 @@ nav.sitenavigation a:hover, nav.sitenavigation a:focus {
     width:100%;
     word-spacing:2px;   
 }
-
 #Photoframe {
     width:70%;
     height:70%;
@@ -129,6 +169,8 @@ nav.sitenavigation a:hover, nav.sitenavigation a:focus {
     margin-left:57px;
     display:block;
 }
+
+/* article property for all HTML except Index.html */
 
 article {
     font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
@@ -142,26 +184,6 @@ article {
     padding:10px;
     border-style:double;
 }
-/* photo property for horizontal images */
-.Photos1 {
-    width:35%;
-}
-
-/* photo property for vertical images */
-.Photos {
-    width:70%;
-    height:5%;
-    margin-top:10px;
-}
-
-h1 {
-    text-align:center;
-    font-family:'Playball','Roboto',Arial, Helvetica, sans-serif;
-    color:#000000;
-    font-size: 30px;
-    margin-top:70px;
-}
-
 div.fotorama {
     margin-top:30px;
     margin-bottom:30px;
@@ -170,17 +192,7 @@ div.fotorama {
     padding:15px; 
     }
 
-figure {
-    font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
-    font-size:15px;
-    text-align:right;
-    font-weight:bold;
-    margin:15px;
-    margin-right:15px;
-    margin-top:25px;
-}
-
-/* button property */
+/* button property for all HTML */
 #Button {
     display:none;
     position:fixed;
@@ -196,15 +208,9 @@ figure {
     border-radius:5px;
     font-size:10px;
 }
-
 #Button:hover {
     background-color:#FFFFFF;
 }
-
-/* icon property */
-span {
-    margin-left:8px;
- }
 
  /*form property */
 article#feedback, article#results {
@@ -226,7 +232,6 @@ label {
 #textarea {
     width:80%;
 }
-
 #submitbutton {
     background-color:#eadd92;
     color:#000000;
@@ -235,12 +240,13 @@ label {
     border-radius: 4px;
     cursor: pointer;
 }
-
 #submitbutton:hover {
     background-color:#bbb074;
 }
     
-}
+} 
+
+/*for screen of at least 640px */
 @media screen and (min-width:640px), print {
 /* body property */
 body {
@@ -252,20 +258,20 @@ body {
     padding-bottom:0.5em;
     }    
 
+/* header property */
+
 /* nav bar menu property */
 div.navmenu {
     display:none;
 }
 
 /* nav bar property */
-
 nav.sitenavigation {
     font-size:20px;
     font-family: 'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
     font-weight:bold;
     display:inline;
 }
-
 nav.sitenavigation a {
     margin-left:15x;
     margin-right:15px;
@@ -278,7 +284,6 @@ ul {
     list-style-type:none;
     display:inline-block;
 }
-
 /* nav link colours */
 a:link {
     color:#000000;
@@ -298,22 +303,21 @@ nav.sitenavigation a:hover, nav.sitenavigation a:focus {
     width:110px;
 }
 
-/* h1 and h2 property */
+/* all h1 and h2 property */
 h1 {
     text-align:center;
     font-family:'Playball','Roboto',Arial, Helvetica, sans-serif;
     color:#000000;
     font-size:30px;
 }
-
 h2 {
     color:#000000;
 }
+
 /* article property for Index.html */
 .pointer {
     color:#000000;
 }
-
 indexarticle {
     font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
     font-size:15px;
@@ -358,7 +362,6 @@ article {
     padding:15px;
     border-style:double;
 }
-
 div.fotorama {
     margin-top:30px;
     margin-bottom:30px;
@@ -367,11 +370,11 @@ div.fotorama {
     padding:15px; 
 }
 
-/* photo property for verticle images */
+/* photo property for all vertical images */
 .Photos1 {
     width:35%;
 }
-/* photo property for horizontal images */
+/* photo property for all horizontal images */
 .Photos {
     width:72%;
     height:5%;
@@ -394,7 +397,6 @@ div.fotorama {
     border-radius:10px;
     font-size:15px;
 }
-
 #Button:hover {
     background-color:#FFFFFF;
 }
@@ -408,11 +410,11 @@ figure {
     margin:20px;
     margin-top:30px;
 }
-
 /* icon property */
 span {
    margin-left:4px;
 }
+
 /*form property */
 article#feedback,article#results {
     width:60%;
@@ -429,11 +431,9 @@ label {
     text-align:left;
     position:relative;
 }
-
 #textarea {
     width:80%;
 }
-
 #submitbutton {
     background-color:#eadd92;
     color:#000000;
@@ -442,7 +442,6 @@ label {
     border-radius: 4px;
     cursor: pointer;
 }
-
 #submitbutton:hover {
     background-color:#bbb074;
 }
@@ -452,15 +451,7 @@ label {
 /* for screen of at least 1280px */
 @media screen and (min-width:1280px), print {  
 
-    ul {
-        list-style-type:none;
-        display:inline-block;
-    }
-    table {
-        border:none;
-     }
-
-/* body container */
+/* body property */
 body {
     max-width: 1200px;
     margin:auto;
@@ -469,8 +460,7 @@ body {
     padding-top:0.5em;
 }
 
-/* header segment*/
-
+/* header property (for logo and navigation) */
 
 /* nav bar menu property */
 div.navmenu {
@@ -484,28 +474,26 @@ div.navmenu {
     width:170px;
 }
 
-/* header property (for logo and navigation) */
+/* header property for all HTML */
 header.indexhead {
     padding-left:35px;
 }
 
-/* navigation bar property */
-
-
+/* navigation property */
+ul {
+    list-style-type:none;
+    display:inline-block;
+}
 nav.sitenavigation li {
     display:inline-block;
     margin-top:20px;
 }
-
-
-
 nav.sitenavigation {
     font-size:41px;
     font-family: 'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
     font-weight:bold;
     display:inline;
 }
-
 nav.sitenavigation ul {
     border:3px solid transparent;
     display:inline-block;
@@ -513,11 +501,11 @@ nav.sitenavigation ul {
     z-index:2;
     margin-top:50px;
 }
-
 nav.sitenavigation a {
     margin-left:20px;
     margin-right:20px;
 }
+
 /* nav link colours */
 a:link {
     color:#000000;
@@ -538,12 +526,12 @@ h1 {
     font-size: 60px;
 }
 
-/* article segment */
-
 /* h2 property for all html */
 h2 {
     color:#000000;
 }
+
+/* article segment */
 
 /* article property for other HTML except for Index.html */
 article {
@@ -565,7 +553,9 @@ div.fotorama {
     border-style:double;
     padding:15px; 
 }
+
 /* article property for Index.html */
+
 /* index page property */
 .pointer {
     color:#000000;
@@ -600,16 +590,17 @@ indexarticle {
     margin-left:70px;
     padding-top:60px;
 }
+
 /* title property for Strengths,Weakness and Ways to improve */
 .SWW {
     font-size:60px;
 }
 
-/* photo property for horizontal images */
+/* photo property for all horizontal images */
 .Photos1 {
     width:35%;
 }
-/* photo property for vertical images */
+/* photo property for all vertical images */
 .Photos {
     width:70%;
     height:5%;
@@ -632,7 +623,6 @@ indexarticle {
     border-radius:10px;
     font-size:20px;
 }
-
 #Button:hover {
     background-color:#FFFFFF;
 }
@@ -646,7 +636,6 @@ figure {
     margin:40px;
     margin-top:60px;
 }
-
 /* icon property */
 span {
    margin-left:8px;
@@ -667,11 +656,9 @@ label {
     text-align:left;
     position:relative;
 }
-
 #textarea {
     width:80%;
 }
-
 #submitbutton {
     background-color:#eadd92;
     color:#000000;
@@ -680,7 +667,6 @@ label {
     border-radius: 4px;
     cursor: pointer;
 }
-
 #submitbutton:hover {
     background-color:#bbb074;
 }
@@ -689,23 +675,13 @@ label {
 
 /* for screen of at least 1400px */
 @media screen and (min-width:1400px), print {
-
-    ul {
-        list-style-type:none;
-    }
-    
 /* body container */
-    body {
+body {
         max-width: 1320px;
         padding-top: 0.5em;
         opacity: 1;
         transition:1s opacity;
-    }
-
-    body.fade-out {
-        opacity: 0;
-        transition:none;
-    }
+}
 
 /* header segment */
 
@@ -722,6 +698,9 @@ header.indexhead {
 }
 
 /* navigation bar property */
+ul {
+    list-style-type:none;
+}
 nav.sitenavigation {
     font-size:45px;
     font-family: 'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
@@ -751,10 +730,12 @@ h1 {
     color: #000000;
     font-size:70px;
 }
+
 /* h2 property for all HTML */
 h2 {
     color:#000000;
 }
+
 /* article segment */
 
 /* article property for all html except index */
@@ -769,7 +750,6 @@ article {
     border:10px solid #000000;
     padding:20px;
     border-style:double;
-    
 }
 div.fotorama {
     margin-top:50px;
@@ -780,6 +760,7 @@ div.fotorama {
 }
 
 /* article property for index html */
+
 /* index page property */
 .pointer {
     color:#000000;
@@ -821,12 +802,12 @@ indexarticle {
     font-size:70px;
 }
 
-/* photo property horizontal images */
+/* photo property all horizontal images */
 .Photos1 {
     width:35%;
 }
 
-/* photo property for vertical images */
+/* photo property for all vertical images */
 .Photos {
     width:70%;
     height:5%;
@@ -849,7 +830,6 @@ indexarticle {
     border-radius:10px;
     font-size:20px;
 }
-
 #Button:hover {
     background-color:#FFFFFF;
 }
@@ -884,11 +864,9 @@ label {
     text-align:left;
     position:relative;
 }
-
 #textarea {
     width:80%;
 }
-
 #submitbutton {
     background-color:#eadd92;
     color:#000000;
@@ -897,7 +875,6 @@ label {
     border-radius: 4px;
     cursor: pointer;
 }
-
 #submitbutton:hover {
     background-color:#bbb074;
 }
