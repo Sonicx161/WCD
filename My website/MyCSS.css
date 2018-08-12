@@ -92,6 +92,9 @@ nav.sitenavigation a:hover, nav.sitenavigation a:focus {
     color: #EE592E;
     background-color: #000000;
  }
+ .pointer {
+    color:#000000;
+}
 
  div.home{
     max-width:400px;
@@ -307,6 +310,10 @@ h2 {
     color:#000000;
 }
 /* article property for Index.html */
+.pointer {
+    color:#000000;
+}
+
 indexarticle {
     font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
     font-size:15px;
@@ -560,6 +567,9 @@ div.fotorama {
 }
 /* article property for Index.html */
 /* index page property */
+.pointer {
+    color:#000000;
+}
 div.home{
     width:550px;
     height:50%;
@@ -771,6 +781,9 @@ div.fotorama {
 
 /* article property for index html */
 /* index page property */
+.pointer {
+    color:#000000;
+}
 div.home{
     width:550px;
     height:50%;
