@@ -1,0 +1,892 @@
+/*
+My website
+Filename:MyCSS.css
+
+Author:Anthony
+Date:27-5-2018
+CA2 
+*/ 
+
+/* font used in website */
+@font-face {
+    font-family: 'Qwigley';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Qwigley'), local('Qwigley-Regular'), url(http://themes.googleusercontent.com/static/fonts/qwigley/v3/e1i7YaSO_TVGtx3eMdiqaA.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Cookie';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Cookie-Regular'), url(http://themes.googleusercontent.com/static/fonts/cookie/v4/pKcurCxn_Ato3MXK6jF2CA.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Playball';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Playball'), local('Playball-Regular'), url(http://themes.googleusercontent.com/static/fonts/playball/v3/bTcyeVjOJ0HzO36ebPilS_esZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
+  }
+
+  /* HTML property for all pages */ 
+html {
+    background-image: url("Images/Background.jpg");
+}
+
+/* for screen of at most 480px */
+@media screen and (max-width:480px), print {
+/* nav bar menu property */
+    ul {
+        list-style-type:none;
+    }
+     
+body {
+    max-width: 420px;
+    margin:auto;
+    border:1em;
+    color:#000000;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+}
+
+/* property */
+#logo {
+    display:none;
+}
+nav.sitenavigation {
+    background-color:#000000;
+    top:0;
+    left:0;
+    position:relative;
+}
+div.navmenu {
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+nav.sitenavigation ul {
+    border:3px solid transparent;;
+    display:none;
+    position:absolute;
+    z-index:2;
+    background-color:#000000;
+    margin-top:50px;
+  
+}
+nav.sitenavigation li{
+    padding:5px;
+    color:#FFFFFF;
+}
+nav.sitenavigation a:link {
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+a:link {
+    color:#FFFFFF;
+  }
+a:visited { 
+  color:#417d80;
+  }
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+    color: #EE592E;
+    background-color: #000000;
+ }
+
+ div.home{
+    max-width:400px;
+    height:50%;
+    border:5px solid #000000;
+    border-style:double;
+    padding:25px;
+    padding-right:6px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:5px;
+   
+}
+
+ indexarticle {
+    font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align:center;
+    font-weight:bold;
+    color:#5d5d5d;
+    width:100%;
+    word-spacing:2px;   
+}
+
+#Photoframe {
+    width:70%;
+    height:70%;
+    padding-left:5px;
+    padding-right:5px;
+    margin:30px;
+    margin-top:30px;
+    margin-left:57px;
+    display:block;
+}
+
+article {
+    font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
+    font-size:25px;
+    text-align:center;
+    font-weight:bold;
+    color: #5d5d5d;
+    max-width:400px;
+    word-spacing:1.5px;
+    border:5px solid #000000;
+    padding:10px;
+    border-style:double;
+}
+/* photo property for horizontal images */
+.Photos1 {
+    width:35%;
+}
+
+/* photo property for vertical images */
+.Photos {
+    width:70%;
+    height:5%;
+    margin-top:10px;
+}
+
+h1 {
+    text-align:center;
+    font-family:'Playball','Roboto',Arial, Helvetica, sans-serif;
+    color:#000000;
+    font-size: 30px;
+    margin-top:70px;
+}
+
+div.fotorama {
+    margin-top:30px;
+    margin-bottom:30px;
+    border:5px solid black;
+    border-style:double;
+    padding:15px; 
+    }
+
+figure {
+    font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
+    font-size:15px;
+    text-align:right;
+    font-weight:bold;
+    margin:15px;
+    margin-right:15px;
+    margin-top:25px;
+}
+
+/* button property */
+#Button {
+    display:none;
+    position:fixed;
+    bottom:15px;
+    right:20px;
+    z-index:99;
+    border:none;
+    outline:none;
+    background-color:#eadd92;
+    color:#000000;
+    cursor:pointer;
+    padding:10px;
+    border-radius:5px;
+    font-size:10px;
+}
+
+#Button:hover {
+    background-color:#FFFFFF;
+}
+
+/* icon property */
+span {
+    margin-left:8px;
+ }
+
+ /*form property */
+article#feedback, article#results {
+    width:100%;
+    margin:auto;
+    padding:20px;
+    padding-left:5px;
+    padding-right:5px;
+    margin-top:40px;
+}
+div.fbcontainer, div.resultscontainer {
+    text-align:center;
+}
+label {
+    display:block;
+    text-align:left;
+    position:relative;
+}
+#textarea {
+    width:80%;
+}
+
+#submitbutton {
+    background-color:#eadd92;
+    color:#000000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submitbutton:hover {
+    background-color:#bbb074;
+}
+    
+}
+@media screen and (min-width:640px), print {
+/* body property */
+body {
+    max-width: 600px;
+    margin:auto;
+    border:1em;
+    color:#000000;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    }    
+
+/* nav bar menu property */
+div.navmenu {
+    display:none;
+}
+
+/* nav bar property */
+
+nav.sitenavigation {
+    font-size:20px;
+    font-family: 'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    display:inline;
+}
+
+nav.sitenavigation a {
+    margin-left:15x;
+    margin-right:15px;
+}
+nav.sitenavigation li {
+    display:inline-block;
+    margin-top:20px;
+}
+ul {
+    list-style-type:none;
+    display:inline-block;
+}
+
+/* nav link colours */
+a:link {
+    color:#000000;
+  }
+a:visited { 
+  color:#417d80;
+  }
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+    color: #EE592E;
+    background-color: #000000;
+ }
+
+/* logo property */
+#logo {
+    display:inline-block;
+    height:110px;
+    width:110px;
+}
+
+/* h1 and h2 property */
+h1 {
+    text-align:center;
+    font-family:'Playball','Roboto',Arial, Helvetica, sans-serif;
+    color:#000000;
+    font-size:30px;
+}
+
+h2 {
+    color:#000000;
+}
+/* article property for Index.html */
+indexarticle {
+    font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
+    font-size:15px;
+    text-align:center;
+    font-weight:bold;
+    color: #5d5d5d;
+    max-width:50%;
+    word-spacing:2px;   
+}
+div.home{
+    width:240px;
+    float:left;
+    border:10px solid #000000;
+    border-style:double;
+    padding:25px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-bottom:20px;
+}
+#Photoframe {
+    width:40%;
+    float:right;
+    margin:15px;
+    margin-top:50px;
+    margin-left:35px;
+    padding-top:60px;
+}
+h1#indexh1 {
+    margin:25px;
+}
+
+/* article property for all HTMl except Index.html */
+article {
+    font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
+    font-size:28px;
+    text-align:center;
+    font-weight:bold;
+    color: #5d5d5d;
+    max-width:1200px;
+    word-spacing:1.5px;
+    border:8px solid #000000;
+    padding:15px;
+    border-style:double;
+}
+
+div.fotorama {
+    margin-top:30px;
+    margin-bottom:30px;
+    border:8px solid black;
+    border-style:double;
+    padding:15px; 
+}
+
+/* photo property for verticle images */
+.Photos1 {
+    width:35%;
+}
+/* photo property for horizontal images */
+.Photos {
+    width:72%;
+    height:5%;
+    margin-top:10px;
+}
+
+/* button property */
+#Button {
+    display:none;
+    position:fixed;
+    bottom:20px;
+    right:30px;
+    z-index:99;
+    border:none;
+    outline:none;
+    background-color:#eadd92;
+    color:#000000;
+    cursor:pointer;
+    padding:15px;
+    border-radius:10px;
+    font-size:15px;
+}
+
+#Button:hover {
+    background-color:#FFFFFF;
+}
+
+/* footer property */
+figure {
+    font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
+    font-size:20px;
+    text-align:right;
+    font-weight:bold;
+    margin:20px;
+    margin-top:30px;
+}
+
+/* icon property */
+span {
+   margin-left:4px;
+}
+/*form property */
+article#feedback,article#results {
+    width:60%;
+    margin:auto;
+    padding:20px;
+    margin-top:50px;
+    margin-right:92px;
+}
+div.fbcontainer, div.resultscontainer {
+    text-align:center;
+}
+label {
+    display:block;
+    text-align:left;
+    position:relative;
+}
+
+#textarea {
+    width:80%;
+}
+
+#submitbutton {
+    background-color:#eadd92;
+    color:#000000;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submitbutton:hover {
+    background-color:#bbb074;
+}
+    
+}
+
+/* for screen of at least 1280px */
+@media screen and (min-width:1280px), print {  
+
+    ul {
+        list-style-type:none;
+        display:inline-block;
+    }
+    table {
+        border:none;
+     }
+
+/* body container */
+body {
+    max-width: 1200px;
+    margin:auto;
+    border:1em;
+    color:#000000;
+    padding-top:0.5em;
+}
+
+/* header segment*/
+
+
+/* nav bar menu property */
+div.navmenu {
+    display:none;
+}
+
+/* logo property */
+#logo {
+    display:inline-block;
+    height:170px;
+    width:170px;
+}
+
+/* header property (for logo and navigation) */
+header.indexhead {
+    padding-left:35px;
+}
+
+/* navigation bar property */
+
+
+nav.sitenavigation li {
+    display:inline-block;
+    margin-top:20px;
+}
+
+
+
+nav.sitenavigation {
+    font-size:41px;
+    font-family: 'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    display:inline;
+}
+
+nav.sitenavigation ul {
+    border:3px solid transparent;
+    display:inline-block;
+    position:absolute;
+    z-index:2;
+    margin-top:50px;
+}
+
+nav.sitenavigation a {
+    margin-left:20px;
+    margin-right:20px;
+}
+/* nav link colours */
+a:link {
+    color:#000000;
+  }
+a:visited { 
+  color:#417d80;
+  }
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+    color: #EE592E;
+    background-color: #000000;
+ }
+
+/* h1 property for all html */
+h1 {
+    text-align:center;
+    font-family:'Playball','Roboto',Arial, Helvetica, sans-serif;
+    color:#000000;
+    font-size: 60px;
+}
+
+/* article segment */
+
+/* h2 property for all html */
+h2 {
+    color:#000000;
+}
+
+/* article property for other HTML except for Index.html */
+article {
+    font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
+    font-size:40px;
+    text-align:center;
+    font-weight:bold;
+    color: #5d5d5d;
+    max-width:1200px;
+    word-spacing:1.5px;
+    border:8px solid #000000;
+    padding:15px;
+    border-style:double;
+}
+div.fotorama {
+    margin-top:30px;
+    margin-bottom:30px;
+    border:8px solid black;
+    border-style:double;
+    padding:15px; 
+}
+/* article property for Index.html */
+/* index page property */
+div.home{
+    width:550px;
+    height:50%;
+    float:left;
+    border:10px solid #000000;
+    border-style:double;
+    padding:25px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+h1#indexh1 {
+    margin:40px;
+}
+indexarticle {
+    font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align:center;
+    font-weight:bold;
+    color: #5d5d5d;
+    max-width:50%;
+    word-spacing:2px;   
+}
+#Photoframe {
+    width:40%;
+    float:right;
+    margin:30px;
+    margin-top:50px;
+    margin-left:70px;
+    padding-top:60px;
+}
+/* title property for Strengths,Weakness and Ways to improve */
+.SWW {
+    font-size:60px;
+}
+
+/* photo property for horizontal images */
+.Photos1 {
+    width:35%;
+}
+/* photo property for vertical images */
+.Photos {
+    width:70%;
+    height:5%;
+    margin-top:10px;
+}
+
+/* button property */
+#Button {
+    display:none;
+    position:fixed;
+    bottom:20px;
+    right:30px;
+    z-index:99;
+    border:none;
+    outline:none;
+    background-color:#eadd92;
+    color:#000000;
+    cursor:pointer;
+    padding:15px;
+    border-radius:10px;
+    font-size:20px;
+}
+
+#Button:hover {
+    background-color:#FFFFFF;
+}
+
+/* footer property */
+figure {
+    font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
+    font-size:25px;
+    text-align:right;
+    font-weight:bold;
+    margin:40px;
+    margin-top:60px;
+}
+
+/* icon property */
+span {
+   margin-left:8px;
+}
+
+/*form property */
+article#feedback,article#results {
+    width:60%;
+    margin:auto;
+    padding:20px;
+    margin-top:50px;
+}
+div.fbcontainer, div.resultscontainer {
+    text-align:center;
+}
+label {
+    display:block;
+    text-align:left;
+    position:relative;
+}
+
+#textarea {
+    width:80%;
+}
+
+#submitbutton {
+    background-color:#eadd92;
+    color:#000000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submitbutton:hover {
+    background-color:#bbb074;
+}
+
+}
+
+/* for screen of at least 1400px */
+@media screen and (min-width:1400px), print {
+
+    ul {
+        list-style-type:none;
+    }
+    
+/* body container */
+    body {
+        max-width: 1320px;
+        padding-top: 0.5em;
+        opacity: 1;
+        transition:1s opacity;
+    }
+
+    body.fade-out {
+        opacity: 0;
+        transition:none;
+    }
+
+/* header segment */
+
+/* logo property */
+#logo {
+    display:inline-block;
+    height:200px;
+    width:200px;
+}
+
+/* header property (for logo and navigation) */
+header.indexhead {
+    padding-left:35px;
+}
+
+/* navigation bar property */
+nav.sitenavigation {
+    font-size:45px;
+    font-family: 'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    display:inline;
+}
+nav.sitenavigation a {
+    margin-left:20px;
+    margin-right:20px;
+}
+/* nav link colours */
+a:link {
+    color:#000000;
+  }
+a:visited { 
+  color:#417d80;
+  }
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+    color: #EE592E;
+    background-color: #000000;
+ }
+
+/* h1 property for all HTML */
+h1 {
+    text-align:center;
+    font-family:'Playball','Roboto',Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size:70px;
+}
+/* h2 property for all HTML */
+h2 {
+    color:#000000;
+}
+/* article segment */
+
+/* article property for all html except index */
+article {
+    font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align:center;
+    font-weight:bold;
+    color: #5d5d5d;
+    max-width:1300px;
+    word-spacing:2px;
+    border:10px solid #000000;
+    padding:20px;
+    border-style:double;
+    
+}
+div.fotorama {
+    margin-top:50px;
+    margin-bottom:50px;
+    border:10px solid black;
+    border-style:double;
+    padding:20px; 
+}
+
+/* article property for index html */
+/* index page property */
+div.home{
+    width:550px;
+    height:50%;
+    float:left;
+    border:10px solid #000000;
+    border-style:double;
+    padding:25px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-bottom:40px;
+}
+h1#indexh1 {
+    margin:50px;
+}
+indexarticle {
+    font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    text-align:center;
+    font-weight:bold;
+    color: #5d5d5d;
+    max-width:50%;
+    word-spacing:2px;
+}
+#Photoframe {
+    width:42%;
+    height:75%;
+    float:right;
+    margin:50px;
+    margin-left:80px;
+    padding-top:80px;
+}
+
+/* title property for Strengths,Weakness and Ways to improve */
+.SWW {
+    font-size:70px;
+}
+
+/* photo property horizontal images */
+.Photos1 {
+    width:35%;
+}
+
+/* photo property for vertical images */
+.Photos {
+    width:70%;
+    height:5%;
+    margin-top:10px;
+}
+
+/* button property */
+#Button {
+    display:none;
+    position:fixed;
+    bottom:20px;
+    right:30px;
+    z-index:99;
+    border:none;
+    outline:none;
+    background-color:#eadd92;
+    color:#000000;
+    cursor:pointer;
+    padding:15px;
+    border-radius:10px;
+    font-size:20px;
+}
+
+#Button:hover {
+    background-color:#FFFFFF;
+}
+
+/* footer property */
+figure {
+    font-family:'Qwigley','Open Sans',Arial, Helvetica, sans-serif;
+    font-size:30px;
+    text-align:right;
+    font-weight:bold;
+    margin:50px;
+    margin-top:70px;
+}
+
+/* icon property */
+span {
+    margin-left:8px;
+}
+
+/*form property */
+article#feedback,article#results {
+    width:60%;
+    margin:auto;
+    padding:20px;
+    margin-top:50px;
+}
+div.fbcontainer, div.resultscontainer {
+    text-align:center;
+}
+label {
+    display:block;
+    text-align:left;
+    position:relative;
+}
+
+#textarea {
+    width:80%;
+}
+
+#submitbutton {
+    background-color:#eadd92;
+    color:#000000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submitbutton:hover {
+    background-color:#bbb074;
+}
+
+}

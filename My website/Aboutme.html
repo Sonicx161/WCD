@@ -1,91 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> 
-     <title> My website </title>
+     <title> About me page </title>
        <meta charset="utf-8">
+       <meta name="viewport"content="width=device-width, initial-scale=1">
+       <!-- fonts -->
        <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
-      <meta name="viewport" content="width=device-width">
-      <script src="modernizr.custom.40753.js"></script>
-      <link rel="stylesheet" href="My.css.css">
+       <link href='https://fonts.googleapis.com/css?family=Qwigley' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet'>
+      <!-- link to JQuery -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      
+      <!--fotorama css-->
+      <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"rel="stylesheet">
+      <!-- fotorama javascript-->
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+      <link rel="stylesheet" href="MyCss.css">
       <link rel="shortcut icon" href="Images/Favi(2).png">
-      <link rel="fonts" href="Fonts/Claiborne.ttf">
-      <link rel="fonts" href="Fonts/Hickory Jack.ttf">
-      <link rel="fonts" href="Fonts/LoversQuarrel-Regular.ttf">
-      <link rel="fonts" href="Fonts/ChopinScript.ttf">
 </head>
+<!-- Logo and navigation bar -->
 <body>
-  <header>
-    <h1> ABOUT ME </h1>
-  </header>
-  <nav class="sitenavigation">
-  <p><a href="Index.html"> Home </a></p>
-  <p><a href="Eduback.html"> Education background </a></p>
-  <p><a href="Important.html">Important events and people </a></p>
- 
-</nav>
-<h1> My background information</h1>
-<p><img src="Images/Me(2).jpg" alt="Me"></p>
-<article>
+    <header class="indexhead">  
+        <nav class="sitenavigation">
+            <div class = "navmenu">
+                <img src ="Images/nav menu.png" width="63" height="57" alt="nav menu">
+            </div>
+          <img style="vertical-align:middle" src="Images/Logo 4 .jpg" alt="logo" id="logo">
+          <ul>
+            <div class="navdisplay">
+          <li><a href="Index.html">Home </a></li>
+          <li><a href="Aboutme.html">About me </a></li>
+          <li><a href="Eduback.html">Education background </a></li>
+          <li><a href="Important.html">Important people &#38; events</a></li>
+          <li><a href="Form.html">Form</a></li>
+          </div>
+         </ul>
+        </nav>
+      </header>
+
+<h1>INFORMATION&nbsp;ABOUT&nbsp; ME</h1>
+<!-- Slideshow container -->
+<div class ="fotorama"
+ data-loop="true"
+ data-autoplay="true"
+ data-nav="thumbs"
+ data-width="100%"
+ data-height="70%"
+ data-arrows="true"
+ data-click="true"
+ data-swipe="false"
+ data-allowfullscreen="true"
+ data-transition="slide"
+ data-clicktransition="crossfade"
+>
+  <img class="Photos" src="Images/Me.jpg" alt="Me">
+  <img class="Photos" src="Images/Me 1.JPG" alt="Me">
+  <img class="Photos" src="Images/Me 2.JPG" alt="Me">
+  <img class="Photos" src="Images/Me 3.JPG" alt="Me">
+  <img class="Photos" src="Images/Me 4.JPG" alt="Me">
+</div>
+
+<div class="ABP">
+<article id="PI">
   <div class="Aboutme">
-<h2> Personal information </h2>
+<h2 id="PI"> Personal information </h2>
 <p> &bull;&nbsp;My name is Anthony Chua</p>    
-<p> &bull;&nbsp;I am currently 18 years old this year </p> 
+<p> &bull;&nbsp;I am 18 years old this year </p>
+<p> &bull;&nbsp;My birthday is on the 4th of January, 2000</p>
+<p> &bull;&nbsp;My zodiac sign is Capricorn while my Chinese zodiac sign is Rabbit</p>
+<p> &bull;&nbsp;I am borned and raised in Singapore</p> 
+<p> &bull;&nbsp;My blood type is B+</p>
 <p> &bull;&nbsp;I come from a family of 6, with me being the youngest. I have 2 elder brother and an elder sister. </p>
-<p> &bull;&nbsp;Am a realist who wants to be a dreamer once in awhile </p>
-<p> &bull;&nbsp;Wants to achieve the best in everything I do </p>
-<p> &bull;&nbsp;My mottos are “hard work can overcome your flaws” and "life is too short to have regrets". </p>
+<p> &bull;&nbsp;Am a logical thinker and an aspiring dreamer </p>
+<p> &bull;&nbsp;Want to achieve the best in everything I do </p>
 </div> 
 
 <div class="Hobbies">
  <h2> My hobbies </h2>
- <p> &bull;&nbsp;I enjoy playing sports especially badminton. I have been playing badminton since primary school and I don't intend to stop </p>
- <p> &bull;&nbsp; I would hit the gym whenever I can </p>
- <p> &bull;&nbsp;I like to try new things for new experiences. I am currently trying out handball in my current school. </p>
- <p> &bull;&nbsp;I like playing computer games with my friends. The game that I spend most of my time on is League of Legends. </p> 
- <p> &bull;&nbsp;I also enjoy going out with my friends to hang out when we all are available  </p>
- <p> &bull;&nbsp;I love watching anime (animated media) and Korean variety shows during my free time </p> 
+ <p> &bull;&nbsp;I enjoy playing sports especially badminton. I have been playing badminton since primary school and I don't intend to stop. Basketball is also another sport that I spend a lot of my time on. </p>
+ <p> &bull;&nbsp;I also love to hit the gym whenever I can. Since last year, I have been making an effort to go to the gym at least 3 times a week but due to hectic schedule, I could only hit the gym once or twice a week now. </p>
+ <p> &bull;&nbsp;I like to try new things for new experiences too. I am currently trying out handball in my current school and I am also considering to try out billiard too. </p>
+ <p> &bull;&nbsp;Playing computer games with my friends is also one of my hobbies. I would play together with my friends when we are online and the game I spent most my time on is League of Legends (LOL).   </p> 
+ <p> &bull;&nbsp;I enjoy going out with my friends for a great catch up session and for meals. This is one of the things that I look forward to daily.  </p>
+ <p> &bull;&nbsp;I also love watching anime (animated media) and Korean variety shows. I would watch anime or Korean variety shows whenever I am free.  </p> 
 </div>
 
 <div class="DNA">
 <h2> My dreams and ambitions </h2>
-<p> &bull;&nbsp; What my current goal is at the moment is to be able to graduate from Singapore Polytechnic Diploma of Information Technology (DIT) with a Grade Point Average (GPA) score of 3.8 and above </p>
-<p> &bull;&nbsp;I am also hoping to achieve a good Co-Curricular Activity (CCA) record before I graduate from Singapore Polytechnic </p>
-<p> &bull;&nbsp;I dream of having my first pot of gold (considerable amount of money) by the age of 25 </p>
-<p> &bull;&nbsp;I also dream of visiting Korea at least once </p>
+<p> &bull;&nbsp;As I am still studying at the moment, what my current goal is at the moment is to be to graduate from Singapore Polytechnic Diploma of Information Technology (DIT) with a Grade Point Average (GPA) score of 3.8 and above. It would be ideal if I can graduate with a 4 as my GPA. </p>
+<p> &bull;&nbsp;I am also aiming for a Gold if not, Gold with honours for my Co-Curricular Activity (CCA) record. </p>
+<p> &bull;&nbsp;I would like to travel to a new country every year. </p>
+<p> &bull;&nbsp;I want to take a trip down my memory lane just to relive and reminisce the good memories I have. </p>
 </div>
+
 <div class="SW">
-<h2> My strengths and weaknesses </h2>
-<p> Strengths <br/>
- <p>&bull;&nbsp;Always trying to improve myself </p>
- <p>&bull;&nbsp;Desire to be more knowledgeable </p>
- <p>&bull;&nbsp;Love to overcome challenges </p>
- <p>&bull;&nbsp;Want to obtain new experiences </p>
-<p> Weaknesses <br/>
-<p>&bull;&nbsp; Procrastinates a lot  </p>
-<p>&bull;&nbsp;Am very backward-looking </p>
-<p>&bull;&nbsp;Unappreciative at times/Not knowing to be grateful </p>
-</div>  
-
-
+<h2> My strengths and weaknesses and ways to improve </h2>
+<p class="SWW">Strengths <br/>
+ <p>&bull;&nbsp;I always trying to improve myself. I believe that constantly improving myself is an important thing and is a form of respect to myself </p>
+ <p>&bull;&nbsp;I desire to be more knowledgeable. Having more knowledge is equilvalent to improving myself and it is important to have more knowledge of things other than knowledge from textbooks, which are limited.  </p>
+ <p>&bull;&nbsp;I love to overcome challenges. I see challenges as a stepping stone that will constantly help to guide and mold me to a better person than I was. Addtionally, by overcoming challenges, it provides me with a great sense of achievement, pride and joy. </p>
+ <p>&bull;&nbsp;I am perseverant. I believe it is important to be perseverant in everything we do because that will give us the drive and motivation as well as the confidence to conquer challenges and tough times.  </p>
+<p class="SWW"> Weaknesses <br/>
+<p>&bull;&nbsp;I am a person that procrastinates a lot. And when I say a lot, I mean saving my work till the very last minute until it piles up like a mountain which I would then start to work on it.  </p>
+<p>&bull;&nbsp;I am not someone that can handle stress every well. I tend to break down when things get too stressful and would always reproach myself for not handling the situation well. </p>
+<p>&bull;&nbsp;I am not someone that can handle my emotions very well. I always let my emotions get in my way which causes me to not think rationally in situations, resulting to bad decision making in the end. </p>
+<p>&bull;&nbsp;I am very backward-looking. I tend to look back to the past more than focusing on what is going on now.  </p>
+<p>&bull;&nbsp;Unappreciative at times. Sometimes I would take others people's advice as a form of criticism to me that I do not appreciate but I did not think about the intention that they have behind their advices.  </p>
+</div>
+<div class="Improve">
+  <p class="SWW">Ways to improve</p>
+  <p>&bull;&nbsp;I need to improve on my time management as well as my laziness. This will help me to overcome my procrastinations so I would not feel stressed out when datelines for my school work are approaching.</p>
+  <p>&bull;&nbsp;I can learn to better manage my stress levels by taking breaks time to time and distract myself by divert my attention away from things that are causing me to be stressed out.  </p>
+  <p>&bull;&nbsp;I should pause and think before I do anything. This is so that I would not allow my emotions to get the better of me so that I can make calm and rational decisions that will not make things worse.</p>
+  <p>&bull;&nbsp;I should focus my attention on what is actually happening than what has already happened. This is because I do not have the ability to turn back time to change what has already happened but I do have the ability to change what is going to happen.</p>
+  <p>&bull;&nbsp;I should learn to be more appreciative and be contented with whatever I have. I believe that being contented with what I have is really important because it will then bring happiness. We often overestimate the external factors (money,materialistic objects) when it comes to happiness but that should be considered a bonus than a requirement. It is the little things that count.</p>
+</div> 
+ 
 </article> 
-
+</div>
 
 <aside>
- <!-- (image) -->
 </aside>
 <footer>
     <figure>
-        <p> For those who are interested in my social medias, these are the links to my social medias </p>
-        <div id="fb"> <a href="https://www.facebook.com/anthony.chua.90" target="_blank">
-        <img src="Images/WCDFacebookIcon(1).png" alt="facebook" ></a></div>
-        
-        <div id="ig"> <a href="https://www.instagram.com/cyt.anthony/?hl=en" target="_blank">
-        <img src="Images/WCDInstaIcon(1).png" alt="Insta"> </a></div>
-        
-        <div id="tweet"> <a href="https://twitter.com/PyroMagnum" target="_blank"> 
-        <img src="Images/WCDTwitterIcon(1).png" alt="Twitter"></a></div>
-        </figure>
+        <p id = "foot"> For those who are interested in my social medias, these are the links to my social medias </p>
+        <span id="fb"> <a href="https://www.facebook.com/anthony.chua.90" target="_blank">
+        <img src="Images/WCDFacebookIcon(1).png" alt="facebook" ></a></span>
 
+         <span id="tweet"> <a href="https://twitter.com/PyroMagnum" target="_blank"> 
+        <img src="Images/WCDTwitterIcon(1).png" alt="Twitter"></a></span>
+        
+        <span id="ig"> <a href="https://www.instagram.com/cyt.anthony/?hl=en" target="_blank">
+        <img src="Images/WCDInstaIcon(1).png" alt="Insta"> </a></span>
+        <button onclick="topFunction()" id="Button" title="Go to top">Back to top</button>
+        </figure>
 </footer>
+<script src="MyJS.js"></script>
 </body>
 </html>

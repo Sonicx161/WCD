@@ -2,51 +2,67 @@
 <html lang="en">
 <head> 
      <title> My website </title>
-       <meta charset="utf-8">
+      <meta charset="utf-8">
+      <meta name="viewport"content="width=device-width, initial-scale=1">
+      <!-- fonts -->
       <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
-      <meta name="viewport" content="width=device-width">
-      <script src="modernizr.custom.40753.js"></script>
-      <link rel="stylesheet" href="My.css.css">
+      <link href='https://fonts.googleapis.com/css?family=Qwigley' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet'>
+      <link rel="stylesheet" href="MyCSS.css">
       <link rel="shortcut icon" href="Images/Favi(2).png">
-      <link rel="fonts" href="Fonts/Claiborne.ttf">
-      <link rel="fonts" href="Fonts/Hickory Jack.ttf">
-      <link rel="fonts" href="Fonts/LoversQuarrel-Regular.ttf">
       
 </head>
 <body>
-  <header id="indexhead">
-  <h1> Welcome to my site </h1>
-</header>
-<nav class="sitenavigation">
-  <p><a href="Aboutme.html"> About me </a></p>
-  <p><a href="Eduback.html"> Education background </a></p>
-  <p><a href="Important.html">Important events and people </a></p>
-</nav>
-<header>
-<article>
+    <header class="indexhead">  
+        <nav class="sitenavigation">
+            <div class = "navmenu">
+                <img src ="Images/nav menu.png" width="63" height="57" alt="nav menu">
+            </div>
+          <img style="vertical-align:middle" src="Images/Logo 4 .jpg" alt="logo" id="logo">
+          <ul>
+          <li><a href="Index.html">Home </a></li>
+          <li><a href="Aboutme.html">About me </a></li>
+          <li><a href="Eduback.html">Education background </a></li>
+          <li><a href="Important.html">Important people &#38; events</a></li>
+          <li><a href="Form.html">Form</a></li>
+          </ul>
+        </nav>
+      </header>
+
+<h1 id="indexh1">Website objective</h1>
+
+<aside>
+    <img id="Photoframe" src="Images/Cover photo.jpg" alt="Cover photo">
+</aside>
+
+<indexarticle>
   <div class="home">
     <p class="pointer"> What is this website about? </p>
-    <p> &bull;&nbsp;This is my personal website which contains my personal information and is also a platform to update my ‘status’ through this e-portfolio  </p>
-    <p class="pointer"> What is this site for ?  </p>
-      <p>&bull;&nbsp;I will be sharing information about myself,what my dreams and ambitions are,my educational background and feature some of the photos that I find meaningful for you (users) to get to know more about me. 
+    <p> &bull;&nbsp;This is my personal website which contains my personal information that I would like to share with you about and it also serves as a platform to update my ‘status’ through this e-profile  </p>
+    <p class="pointer"> What is this site for?  </p>
+      <p>&bull;&nbsp; I hope that through this website you will get to know a little more about me because I will be sharing information about myself and my personality, what I hope for in the future, my education background as well as some important people and events that I regard as a big part of my life. I will also feature some photos that I find meaningful which will help you in getting to know me better.
     </p>
     <p class="pointer">Who are the users that I am targeting? </p>
-   <p>&bull;&nbsp;This site is for anyone is interested and wants to know more about me </p>
+   <p>&bull;&nbsp;There is no intended target audience for my website as this site is for anyone is interested and wants to know more about me. As for those who would like to get into contact with me personally, you can fill up the form and I may contact you.  </p>
     </div>
-</article>
-</header>
+</indexarticle>
+
 <footer>
-  <figure>
-     For those who are interested in my social medias, these are the links to my social media 
-    <div id="fb"> <a href="https://www.facebook.com/anthony.chua.90" target="_blank">
-      <img src="Images/WCDFacebookIcon(1).png" alt="facebook" ></a></div>
-      
-      <div id="ig"> <a href="https://www.instagram.com/cyt.anthony/?hl=en" target="_blank">
-      <img src="Images/WCDInstaIcon(1).png" alt="Insta" > </a></div>
-      
-      <div id="tweet"> <a href="https://twitter.com/PyroMagnum" target="_blank"> 
-      <img src="Images/WCDTwitterIcon(1).png" alt="Twitter" ></a></div>
-</figure>
+    <figure>
+        <p id = "foot"> For those who are interested in my social medias, these are the links to my social medias </p>
+        <span id="fb"> <a href="https://www.facebook.com/anthony.chua.90" target="_blank">
+        <img src="Images/WCDFacebookIcon(1).png" alt="facebook" ></a></span>
+
+         <span id="tweet"> <a href="https://twitter.com/PyroMagnum" target="_blank"> 
+        <img src="Images/WCDTwitterIcon(1).png" alt="Twitter"></a></span>
+        
+        <span id="ig"> <a href="https://www.instagram.com/cyt.anthony/?hl=en" target="_blank">
+        <img src="Images/WCDInstaIcon(1).png" alt="Insta"> </a></span>
+        <button onclick="topFunction()" id="Button" title="Go to top">Back to top</button>
+        </figure>
 </footer>
+
+<script src="MyJS.js"></script>
 </body>
 </html>

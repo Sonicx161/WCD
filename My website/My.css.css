@@ -7,14 +7,23 @@ Date:27-5-2018
 CA1 
 */ 
 @font-face {
-    font-family: 'Hickory Jack';
-    src: url(http://www.fontspace.com/brittney-murphy-design/hickory-jack)
-}
-@font-face {
-    font-family:'Chopin Script';
-    src: url(https://www.1001fonts.com/chopin-script-font.html)
-}
-
+    font-family: 'Qwigley';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Qwigley'), local('Qwigley-Regular'), url(http://themes.googleusercontent.com/static/fonts/qwigley/v3/e1i7YaSO_TVGtx3eMdiqaA.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Cookie';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Cookie-Regular'), url(http://themes.googleusercontent.com/static/fonts/cookie/v4/pKcurCxn_Ato3MXK6jF2CA.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Playball';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Playball'), local('Playball-Regular'), url(http://themes.googleusercontent.com/static/fonts/playball/v3/bTcyeVjOJ0HzO36ebPilS_esZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
+  }
 
 html { 
     background-color:#FEFFF3;
@@ -52,21 +61,23 @@ a:link {
  }
 
 /* h1 property for all HTML */
+
 .pointer {
-    font-family:Chopin Script;
+    font-family:'Cookie';
     font-weight:bold;
+    color: #000000;
 }
 h1 {
     text-align:center;
     font-size:50px;
-    font-family:Hickory Jack;
+    font-family:'Playball';
     letter-spacing:0.1cm;
     
 }
 h2 {
     text-align: center;
     font-size: 80px;
-    font-family: Chopin Script;
+    font-family: 'Chopin Script';
     letter-spacing:0.1cm;
     padding-top: 0em;
 } 
@@ -77,8 +88,9 @@ nav.sitenavigation {
     color:#000000;
     font-size: 50px;
     border:Solid #000000 1px;
-    font-family:Hickory Jack;
+    font-family:'Qwigley';
     border-bottom:none;
+    font-weight:bold;
 }
 nav.sitenavigation p {
     display: inline-block;
@@ -89,14 +101,16 @@ nav.sitenavigation a:hover, nav.sitenavigation a:focus {
     color: #FFFFFF  ;
     background-color: #000000;
  }
+
 /* article property for all HTML */
 
 article  { 
-    font-family:'Hickory Jack';
-    font-weight:2em;
+    font-family:'Qwigley';
+    font-weight: bold;
     font-size: 50px;
     border:Solid #000000 2px;
     text-align:center;
+    color: #2c2c2c;
 }
 /* property for the classes in HTML */
 .home ,.Hobbies ,.DNA ,.SW ,.Eduback ,.Important {

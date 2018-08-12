@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+     <title> Education backkground page </title>
+       <meta charset="utf-8">
+       <meta name="viewport"content="width=device-width, initial-scale=1">
+       <!-- fonts -->
+      <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Qwigley' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet'>
+      <link rel="stylesheet" href="MyCss.css">
+      <link rel="shortcut icon" href="Images/Favi(2).png">
+</head>
+
+<body>
+    <header class="indexhead">  
+        <nav class="sitenavigation">
+            <div class = "navmenu">
+                <img src ="Images/nav menu.png" width="63" height="57" alt="nav menu">
+            </div>
+          <img style="vertical-align:middle" src="Images/Logo 4 .jpg" alt="logo" id="logo">
+          <ul>
+              <div class="navdisplay">
+          <li><a href="Index.html">Home </a></li>
+          <li><a href="Aboutme.html">About me </a></li>
+          <li><a href="Eduback.html">Education background </a></li>
+          <li><a href="Important.html">Important people &#38; events</a></li>
+          <li><a href="Form.html">Form</a></li>
+           </div>
+         </ul>
+        </nav>
+      </header>
+
+      <h1>Response form</h1>
+
+    <article id="feedback">
+      <div class="fbcontainer">
+        <h2> Feedback for my website </h2>
+        <form method="GET" action="Results.html">
+            <fieldset class = "contactinfo">
+                <legend>Your contact information </legend>
+                <label for = "firstnameinput">
+                    First name <br>
+                    <input type ="text" name="First name" id="firstnameinput" placeholder="First name" required>
+                </label>
+                <label for = "lastnameinput">
+                    Last name <br>
+                    <input type= "text" name="Last name" id= "lastnameinput" placeholder="Last name" required>
+                </label>
+                <label for = "emailinput">
+                    Email <br>
+                    <input type = "email" name="Email address" id="emailinput" placeholder="address@example.com" required>
+                </label>
+                <label for = "numberinput">
+                    Phone <br>
+                    <input type = "text" name="Phone No" id="numberinput" placeholder="e.g 99999999" required>
+                </label>
+            </fieldset>
+
+            <fieldset class = "contactmet">
+                <legend> How would you like me to contact you? </legend>
+                <label for = "Phone">
+                  Phone <br>
+                 <input type = "radio" name = "Preferred contact method" id="Phone" value="Phone" checked>
+             </label>
+             <label for = "Email">
+                  Email <br>
+                 <input type = "radio" name="Preferred contact method" id="Email" value = "Email" >
+             </label>
+             <label for = "Either">
+                 Either <br>
+                <input type = "radio" name="Preferred contact method" id="Either" value="Either" >
+             </label>
+            </fieldset>
+
+             <fieldset class = "info">
+               <legend> Tell me a little about you </legend>
+               <label for = "birthday">
+                 When is your birthday? <br>
+                 <input type="date" name="Birthday" id="birthday">
+                 <input type="reset">
+               </label>
+               <label for = "Hobbies">
+                 What is/are your hobby (ies)? <br>
+                 <input type = "text" name="Hobbies" id="Hobbyinput" placeholder="Your hobby"><br>
+                 <input type = "text" name="Hobbies" id="Hobbyinput" placeholder="Your hobby">
+               </label>
+               <label for = "TopicInterest">
+                 What is/are some of your topic(s) of interest? <br>
+                 <input type = "text" name="Topic of Interest" id="TIinput" placeholder="Topic of interest"><br>
+                 <input type = "text" name="Topic of Interest" id="TIinput" placeholder="Topic of interest"><br>
+                 <input type = "text" name="Topic of Interest" id="TIinput" placeholder="Topic of interest">
+               </label>
+               <label for = "Pasttime">
+                How do you normally spend your time? <br>
+                <input type = "text" name="Past time" id="PTinput" placeholder="How you past your time?">
+               </label>
+               <label for = "out">
+                 If we were to go out, where would you like to go?
+                 <input type = "text" name="Preferred outing destination " id="out" placeholder="Preferred destination"> 
+               </label>
+            </fieldset>
+
+            <fieldset class="AdditionInfo">
+                <legend>Additional Info</legend>
+                <p>What else do you think I should know about you? </p>
+                <textarea id="textarea" name="Addition info about you"> </textarea>
+            </fieldset>
+
+            <input id="submitbutton"type="submit">
+        </form>
+      </div>
+
+    </article>
+
+    <footer>
+        <figure>
+            <p id = "foot"> For those who are interested in my social medias, these are the links to my social medias </p>
+            <span id="fb"> <a href="https://www.facebook.com/anthony.chua.90" target="_blank">
+            <img src="Images/WCDFacebookIcon(1).png" alt="facebook" ></a></span>
+    
+             <span id="tweet"> <a href="https://twitter.com/PyroMagnum" target="_blank"> 
+            <img src="Images/WCDTwitterIcon(1).png" alt="Twitter"></a></span>
+            
+            <span id="ig"> <a href="https://www.instagram.com/cyt.anthony/?hl=en" target="_blank">
+            <img src="Images/WCDInstaIcon(1).png" alt="Insta"> </a></span>
+            <button onclick="topFunction()" id="Button" title="Go to top">Back to top</button>
+            </figure>
+            
+    </footer>
+    <script src="MyJS.js"></script>
+</body>

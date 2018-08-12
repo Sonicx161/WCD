@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+     <title> Education backkground page </title>
+       <meta charset="utf-8">
+       <meta name="viewport"content="width=device-width, initial-scale=1">
+       <!-- fonts -->
+      <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Qwigley' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet'>
+      <link rel="stylesheet" href="MyCss.css">
+      <link rel="shortcut icon" href="Images/Favi(2).png">
+</head>
+
+<body>
+        <body>
+                <header class="indexhead">  
+                    <nav class="sitenavigation">
+                        <div class = "navmenu">
+                            <img src ="Images/nav menu.png" width="63" height="57" alt="nav menu">
+                        </div>
+                      <img style="vertical-align:middle" src="Images/Logo 4 .jpg" alt="logo" id="logo">
+                      <ul>
+                          <div class="navdisplay">
+                      <li><a href="Index.html">Home </a></li>
+                      <li><a href="Aboutme.html">About me </a></li>
+                      <li><a href="Eduback.html">Education background </a></li>
+                      <li><a href="Important.html">Important people &#38; events</a></li>
+                      <li><a href="Form.html">Form</a></li>
+                       </div>
+                     </ul>
+                    </nav>
+                </header>
+
+                <h1>Results of form submitted</h1>
+                <article id="results">
+                    <div id="resultscontainer">
+                        <h2> You have successfully submitted your form! </h2>
+                        <h3> These are your response: </h3>
+                        <script>
+                                var formData = location.search;
+                                formData = formData.substring(1, formData.length);
+                                while (formData.indexOf("+") !== -1) {
+                                   formData = formData.replace("+", "  ");
+                                }
+                                formData = decodeURIComponent(formData);
+                                var formArray = formData.split("&");
+                                for (var i = 0; i < formArray.length; i = i + 1) {
+                                   document.write("<p>  " + formArray[i] + "  </p>");
+                                }
+                        </script>
+                    </div>
+
+                </article>
+
+                <footer>
+                        <figure>
+                            <p id = "foot"> For those who are interested in following my social media accounts, these are the links to my social media profiles </p>
+                            <span id="fb"> <a href="https://www.facebook.com/anthony.chua.90" target="_blank">
+                            <img src="Images/WCDFacebookIcon(1).png" alt="facebook" ></a></span>
+                    
+                             <span id="tweet"> <a href="https://twitter.com/PyroMagnum" target="_blank"> 
+                            <img src="Images/WCDTwitterIcon(1).png" alt="Twitter"></a></span>
+                            
+                            <span id="ig"> <a href="https://www.instagram.com/cyt.anthony/?hl=en" target="_blank">
+                            <img src="Images/WCDInstaIcon(1).png" alt="Insta"> </a></span>
+                            <button onclick="topFunction()" id="Button" title="Go to top">Back to top</button>
+                            </figure>
+                            
+                    </footer>
+                    <script src="MyJS.js"></script>
+</body>
